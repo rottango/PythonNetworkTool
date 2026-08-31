@@ -1,0 +1,20 @@
+[project]
+name = "pythonnetworktool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rottango", email = "rottangochannel@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "paramiko>=5.0.0",
+    "twisted>=26.4.0",
+]
+
+[project.scripts]
+pythonnetworktool = "pythonnetworktool:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
